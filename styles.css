@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 222, 238);
+    overflow: hidden;
+}
+.countdown {
+    display: block;
+    width: 20rem;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform:translate(50%,-50%);
+    border-radius: 10px;
+    background-color: rgb(59, 51, 51);
+    overflow: hidden;
+}
+p {
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    text-decoration: 1px underline white;
+}
+
+.input-fields {
+    display: flex;
+}
+
+.input-fields input {
+    height: 30px;
+    width: 60px;
+    /* border: 2px solid black; */
+    margin: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: wheat;
+    position: relative;
+    left: 40px;
+    font-size: 30px;
+    outline: none;
+
+}
+
+.input-fields input::placeholder {
+    color: white;
+}
+
+.input-fields #startOrResumeBtn {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    right:35%;
+    bottom: 70%;
+    background-color: pink;
+}
+
+.input-fields label {
+    color: white;
+    position: relative;
+    font-size: 40px;
+    left: 30px;
+    top: -3px;
+}
+
+.h-m-s {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: white;
+}
+
+.h-m-s .h {
+    position: relative;
+    left: 24px;
+    top: -9px;
+}
+
+.h-m-s .m {
+    position: relative;
+    left: 18px;
+    top: -9px;
+}
+.h-m-s .s {
+    position: relative;
+    left: 0px;
+    top: -9px;
+}
+
+.timer {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 25%;
+    left: 40px;
+    top: 170px;
+    border: 7px solid rgb(3, 140, 253);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.dot {
+    position: relative;
+    top: -3px;
+    right: 4px;
+    font-size: 45px;
+}
+
+.resetCountdown {
+    position: absolute;
+    bottom: 25%;
+    left: 49%;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(0, 110, 255)
+}
+
+

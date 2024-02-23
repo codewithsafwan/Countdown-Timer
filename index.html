@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="countdown">
+        <p>Countdown Timer....</p>
+        <div class="input-fields">
+            <input type="number" id="hoursInput" name="hoursInput" placeholder="00">
+            <label for="hoursInput">:</label>
+            <input type="number" id="minutesInput" name="minutesInput" placeholder="00">
+            <label for="minutesInput">:</label>
+            <input type="number" id="secondsInput" name="secondsInput" placeholder="00">
+            <button id="startOrResumeBtn" onclick="startOrResumeCountdown()">
+                <i class="fa fa-play" aria-hidden="false"></i>
+            </button>
+            <button onclick="resetCountdown()" class="resetCountdown">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="h-m-s">
+            <span class="h">Hours</span>
+            <span class="m">Minutes</span>
+            <span class="s">Seconds</span>
+        </div>
+        <div class="timer">
+            <div>
+                <span id="hours">00</span>
+                <span class="dot">:</span>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <span class="dot"> : </span>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
